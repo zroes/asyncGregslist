@@ -118,8 +118,8 @@ export class Car {
 
   static DynamicCarForm(car = {}) {
     return ` 
-    <form onsubmit="app.carsController.${car ? `updateCar('${car.id}')` : 'createCar()'}" class="row p-4">
-      <h3>${car ? `Edit ${car.make} ${car.model}` : 'List a car'}</h3>
+    <form onsubmit="app.carsController.${car.id ? `updateCar('${car.id}')` : 'createCar()'}" class="row p-4">
+      <h3>${car.id ? `Edit ${car.make} ${car.model}` : 'List a car'}</h3>
       <div class="mb-2 col-4">
         <label for="make">Make</label>
         <input type="text" name="make" id="make" class="form-control" value="${car.make || ''}">
