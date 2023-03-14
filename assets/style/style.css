@@ -1,0 +1,11 @@
+/* BASIC STYLES HERE */
+
+.listings-button {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+}
+
+.form-control {
+  background-color: whitesmoke !important;
+}
