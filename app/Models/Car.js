@@ -117,6 +117,7 @@ export class Car {
   }
 
   static DynamicCarForm(car = {}) {
+    // NOTE because we don't want a bunch of 'undefinded' to show up in our form when we create we have to give the car parameter a default value of '{}'(an empty object). Because empty objects are truthy, our turnery needs to change a little, checking if the 'id' of the car exists
     return ` 
     <form onsubmit="app.carsController.${car.id ? `updateCar('${car.id}')` : 'createCar()'}" class="row p-4">
       <h3>${car.id ? `Edit ${car.make} ${car.model}` : 'List a car'}</h3>
