@@ -27,7 +27,8 @@ export class CarsController {
 
   viewCars() {
     this.getAllCars() // getting them instead of just drawing them, because when we switch 'pages' we might not have the data in our appstate to draw
-    setHTML('form', Car.DynamicCarForm())
+    // setHTML('form', Car.DynamicCarForm())
+    document.getElementById('form').innerHTML = Car.DynamicCarForm()
   }
 
 

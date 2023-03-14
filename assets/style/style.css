@@ -1,5 +1,9 @@
 /* BASIC STYLES HERE */
 
+.house-card {
+  background-color: whitesmoke;
+}
+
 .listings-button {
   position: fixed;
   bottom: 2em;

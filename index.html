@@ -23,7 +23,7 @@
         <span class="ms-2"><b class="text-primary">G</b>regslist</span>
       </a>
       <button class="btn selectable" onclick="app.carsController.viewCars()">🚗</button>
-      <button class="btn selectable" onclick="">🏠</button>
+      <button class="btn selectable" onclick="app.housesController.viewHouses()">🏠</button>
       <button class="btn selectable" onclick="">💼</button>
     </nav>
   </header>
@@ -32,8 +32,7 @@
 
       <!-- Create Listing trigger modal -->
       <button type="button" class="btn btn-primary listings-button rounded-pill fw-bold" data-bs-toggle="modal"
-        data-bs-target="#create-modal">
-        Create Listing <i class="mdi mdi-plus"></i>
+        data-bs-target="#create-modal">Create Listing <i class="mdi mdi-plus-thick"></i>
       </button>
 
       <!-- Create Modal -->
@@ -41,7 +40,9 @@
         <div class="modal-dialog modal-xl text-dark">
           <div class="modal-content">
             <div class="modal-body">
-              <section id="form" class="row"></section>
+              <section id="form" class="row">
+                <!-- form goes here -->
+              </section>
             </div>
           </div>
         </div>
